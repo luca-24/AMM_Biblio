@@ -23,7 +23,7 @@ class Settings
     public static $ViewDescriptorPath;
     
     
-    
+    /*
     public static function setPaths($directory)
     {
        ////// $_SESSION['SettingsPath'] = realpath(__FILE__);
@@ -123,7 +123,7 @@ class Settings
         }
              
         //self::$UtenteFactoryPath = realpath("../../model/UtenteFactory.php");
-    }
+    }*/
 /*
     public static function getUtenteFactoryPath()
     {

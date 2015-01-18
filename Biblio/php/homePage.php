@@ -20,7 +20,7 @@ class FrontController
     public static function start()
     {
         
-        Settings::setPaths(basename(__DIR__));
+       // Settings::setPaths(basename(__DIR__));
         
         /*************/
         

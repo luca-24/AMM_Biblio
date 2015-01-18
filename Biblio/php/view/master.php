@@ -3,10 +3,11 @@
 //include_once '../indexO.php';
 
 include_once '/home/amm/development/Biblio/php/Settings.php';
-Settings::setPaths(basename(__DIR__));
-include_once Settings::$ViewDescriptorPath;
 
-//yyyy//include_once '/home/amm/development/Biblio/php/view/ViewDescriptor.php';
+/*Settings::setPaths(basename(__DIR__));
+include_once Settings::$ViewDescriptorPath;*/
+
+include_once '/home/amm/development/Biblio/php/view/ViewDescriptor.php';
 /****
 if(session_status()!=2)
             session_start();

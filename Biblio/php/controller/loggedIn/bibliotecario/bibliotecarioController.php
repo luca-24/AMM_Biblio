@@ -1,7 +1,8 @@
 <?php
 
 include_once '/home/amm/development/Biblio/php/Settings.php';
-Settings::setPaths(basename(__DIR__));
+
+/*Settings::setPaths(basename(__DIR__));
 
 include_once Settings::$ViewDescriptorPath;
 include_once Settings::$LettorePath;
@@ -11,9 +12,9 @@ include_once Settings::$UtenteFactoryPath;
 include_once Settings::$UtentePath;
 include_once Settings::$BibliotecarioPath;
 include_once Settings::$loggedOutControllerPath;
+*/
 
 
-/*****
 include_once '/home/amm/development/Biblio/php/view/ViewDescriptor.php';
 include_once '/home/amm/development/Biblio/php/model/Lettore.php';
 include_once '/home/amm/development/Biblio/php/model/Libro.php';
@@ -23,7 +24,7 @@ include_once '/home/amm/development/Biblio/php/model/Utente.php';
 include_once '/home/amm/development/Biblio/php/model/Bibliotecario.php';
 include_once '/home/amm/development/Biblio/php/Settings.php';
 include_once '/home/amm/development/Biblio/php/controller/loggedOut/loggedOutController.php';
-*****/
+
 
 /**********
 if(session_status()!=2)
