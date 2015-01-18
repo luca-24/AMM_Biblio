@@ -1,0 +1,25 @@
+<!-- BIBLIOTECARIO  -->
+
+<div id="bibliotecarioContent">
+    
+<div id="cercaLibro">
+    <h3>Cerca un libro nel catalogo</h3>
+    <form method="post" id="formCercaLibro" action="/Biblio/php/controller/loggedIn/bibliotecario/toHome.php">
+        <input id="ruolo" type="hidden" value="bibliotecario">
+        <label for="tipoFiltroL">Seleziona il filtro per la ricerca:</label>
+        <select name="tipoFiltroL" id="tipoFiltroL">
+             <option value="titolo">Titolo</option>
+             <option value="autore">Autore</option>
+        </select>
+        <input type="text" name="parRicercaLibro" id="parRicercaLibro">
+        </br>
+        <button type="submit" id="buttonCercaLibro">Cerca</button>
+    </form>   
+</div>
+
+<div id="gestisciCatalogo">
+    <h3><a href="/Biblio/php/controller/loggedIn/bibliotecario/toCatalogo.php" id="catalogoA">Gestisci catalogo</a></h3>    
+</div>
+
+
+</div>

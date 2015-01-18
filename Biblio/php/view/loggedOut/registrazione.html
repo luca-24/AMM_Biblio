@@ -1,0 +1,50 @@
+<h2>Registrazione</h2>
+<h3>Scegli il tipo di profilo</h3>
+
+    <button id="scegliLettore">Lettore</button></br>
+    <button id="scegliBibliotecario">Biblioteca</button>    
+
+<div id="registrazioneLettore" class="hidden">
+    <h4>Creazione di un account Lettore</h4>
+     <form id="registrazioneL" method="post">
+           <label for="nameL">Nome:</label>
+           <input type="text" name="nome" id="nameL" value=""/><br/>
+           <label for="surnameL">Cognome:</label>
+           <input type="text" name="cognome" id="surnameL" value=""/><br/>
+           <label for="dateL">Data di nascita:</label>
+           <input type="date" name="data" id="dateL" value="aaaa-mm-gg"/><br/>
+           <label for="cityL">Citt&agrave;:</label>                    
+           <input type="text" name="citta" id="cityL" value=""/><br/>               
+           <label for="addressL">Indirizzo:</label>                    
+           <input type="text" name="indirizzo" id="addressL" value=""/><br/>              
+           <label for="emailL">E-mail:</label>
+           <input type="email" name="email" id="emailL" value=""/><br/>
+           <label for="passwordL">Password:</label>
+           <input type="password" name="password" id="passwordL" value=""/><br/>
+           <input type="hidden" name="cmd" value="registrati">
+           <button type="button" id="submitL">Fatto!</button> 
+     </form>                
+</div>
+
+<div id="registrazioneBibliotecario" class="hidden">
+    <h4>Creazione di un account Biblioteca</h4> 
+    <form id="registrazioneB"  method="post">
+           <label for="nameBiblioteca">Nome della biblioteca:</label>
+           <input type="text" name="nomeBiblioteca" id="nameBiblioteca"/><br/>         
+           <label for="nameB">Nome del titolare:</label>
+           <input type="text" name="nome" id="nameB"/><br/>
+           <label for="surnameB">Cognome del titolare:</label>
+           <input type="text" name="cognome" id="surnameB"/><br/>               
+           <label for="cityB">Citt&agrave;:</label>                    
+           <input type="text" name="citta" id="cityB"/><br/>               
+           <label for="addressB">Indirizzo:</label>                    
+           <input type="text" name="indirizzo" id="addressB"/><br/>              
+           <label for="emailB">E-mail:</label>
+           <input type="email" name="email" id="emailB"/><br/>
+           <label for="passwordB">Password:</label>
+           <input type="password" name="password" id="passwordB"/><br/>
+           <input type="hidden" name="cmd" value="registrati">
+           <button type="button" id="submitB">Fatto!</button> 
+     </form>                
+</div>
+

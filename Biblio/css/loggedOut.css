@@ -1,0 +1,390 @@
+body
+{
+    font-family: 'calibri', 'arial', sans-serif;
+    font-size: 18px;
+    background-color: #e4e4f5;
+    margin: 5px;
+}
+
+#page
+{
+    background-color: #e4e4f5;   
+}
+
+input, select
+{
+    margin-bottom: 10px;
+}
+
+p
+{
+    line-height: 24px;
+    font-size: 16px;
+}
+
+td, th
+{
+    text-align: center;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+tr:hover
+{
+    background-color: #e4e4f5;
+}
+
+.icon:hover
+{
+    height: 35px;
+    width: 35px;
+}
+
+form
+{
+    margin: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+#titoloPrinc, #login_form
+{
+     text-align: center;
+}
+
+#errore
+{
+    color: red;
+}
+
+label
+{
+    font-size: 14px;
+}
+
+#header, #footer
+{
+    background-color: #004282;
+    color: white; 
+    
+}
+
+#header
+{
+    height: 80px;
+    position: fixed;
+    width: 99%;
+    top: 0px;
+    left: 5px;
+    right: 5px;
+    z-index: 2;
+    border-top-width: 5px;
+    border-top-style: solid;
+    border-top-color: #e4e4f5;
+}
+
+
+#footer
+{
+    height: 44px;
+    width: 100%;
+    position: relative;
+    top: 60px;
+    
+    
+}
+
+#content
+{    
+    padding: 25px;    
+    position: relative;
+    top: 72px;
+    background-color: white;
+    min-height: 498px;
+}
+
+.hidden
+{
+    display: none;
+}
+
+
+a:link
+{
+    text-decoration: none;   
+}
+
+a:hover
+{
+    font-weight: bold;   
+}
+
+#catalogoA:hover
+{
+    font-size: 23px;
+}
+
+#aggiungiA:hover
+{
+    font-size: 19px;
+}
+
+h1, h2, h3, h4
+{
+    font-family: 'PT Serif', 'Times new roman', serif;
+}
+
+#header a:link, #footer a:link
+{
+    color: white;   
+}
+
+#header a:visited, #footer a:visited
+{
+    color: white;   
+}
+
+#header li, #footer li
+{
+    list-style: none;
+}
+
+
+#header ul li, #footer ul li
+{
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    
+}
+
+#logo
+{
+    float: left;
+    display: inline;
+    margin-top: 15px;
+   
+}
+
+#actions
+{
+    float: left;
+    
+}
+
+#rightSide, #logout
+{
+    float: right;
+    display: inline;
+   
+}
+
+#leftSide
+{
+    float: left;
+}
+
+
+#leftBar
+{
+    float: left;
+    margin-top: 140px;
+}
+
+#rightBar
+{
+    float: right;
+    margin-top: 17%;
+}
+
+#leftBar, #rightBar
+{   
+    background-color: #e4e4f5;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
+}
+
+#rightBar p
+{
+    margin-right: 8px;
+    vertical-align: central;
+    margin-left: 20px;
+    position: fixed;
+    
+}
+
+
+#info
+{
+   position: fixed;
+}
+
+
+#leftBar li
+{
+    margin-top: 10px;
+    list-style: none;   
+}
+
+
+#leftBar ul#homeUl, #leftBar ul#actionsUl, #leftBar ul#logoutUl
+{
+    position: fixed;
+    left: 0px;
+    padding-left: 2%;
+    z-index: 2;
+}
+
+#leftBar ul#actionsUl
+{
+    top: 200px;
+}
+
+#leftBar ul#logoutUl
+{
+    top: 310px;
+}
+
+#cercaBiblioteca, #cercaLibro, #gestisciCatalogo
+{
+    alignment-baseline: central;
+    margin-top: 50px;
+}
+
+#schedaUtente li, #schedaLibro li
+{
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+#bibliotecarioContent
+{
+    padding-top: 60px;
+}
+
+#gestisciCatalogo
+{
+    margin-top: 60px;
+}
+
+#credenziali 
+{
+    margin-left: 110px;
+    margin-top: 30px;
+    padding: 0;
+    height: 30px;
+    width: 380px;
+}
+
+#credenziali h3
+{
+    /* height: 20px; */
+    margin: 0;
+    float: left;
+    display: inline;
+}
+
+#credenziali h4
+{
+    margin-top: 2px;
+    height: 18px;
+    float: left;
+    display: inline;
+    margin-left: 25px;
+}
+
+.button
+{
+    margin-left: 21px;
+}
+
+
+@media only screen and (min-width: 900px) 
+{
+
+    #content
+    {
+        margin-left: 19%;
+        margin-right: 17.5%;
+        padding-left: 3.5%;
+    }
+
+    #rightBar, #leftBar
+    {
+        width: 17.5%;
+    }
+
+
+    #logo
+    {
+       margin-left: 8%;
+       margin-right: 30px;
+    }
+
+    #rightSide
+    {
+        margin-right: 5%;
+    }
+
+    #info
+    {
+        right: 16%;
+    }
+
+    #cercaBiblioteca, #cercaLibro, #gestisciCatalogo
+    {    
+        margin-left: 6%;
+    }
+
+}
+
+@media only screen and (max-width: 899px) 
+{
+    
+    #header
+    {
+        width: 899px;
+    }
+    
+    #content
+    {
+        margin-left: 180px;
+        margin-right: 0px;
+        padding-left: 20px;
+    }
+
+    #leftBar
+    {        
+        width: 180px;
+    }
+    
+    #rightBar
+    {
+        display: none;
+    }
+       
+
+    #logo
+    {        
+       margin-left: 50px;
+       margin-right: 30px;
+    }
+
+    #rightSide
+    {
+        margin-right: 50px;
+    }
+
+    #info
+    {
+        margin-right: 50px;
+    }
+
+    #cercaBiblioteca, #cercaLibro, #gestisciCatalogo
+    {   
+        margin-left: 50px;
+        width: 700px;
+    }
+}

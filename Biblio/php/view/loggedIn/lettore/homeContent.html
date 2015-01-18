@@ -1,0 +1,38 @@
+<!-- LETTORE   -->
+
+<div id="cercaLibro">
+    <h3>Cerca un libro</h3>
+    <form method="post" id="formCercaLibro" action="/Biblio/php/controller/loggedIn/lettore/toHome.php">
+        <input id="ruolo" type="hidden" value="lettore">
+        <label for="cercaIn">Esegui la ricerca in:</label>
+        <select name="cercaIn" id="cercaIn">
+             <option value="tutte">Tutte le biblioteche</option>
+             <option value="mieBiblioteche">Biblioteche a cui sono iscritto</option>
+        </select>
+        </br>
+        <label for="tipoFiltroL">Seleziona il filtro per la ricerca:</label>
+        <select name="tipoFiltroL" id="tipoFiltroL">
+             <option value="titolo">Titolo</option>
+             <option value="autore">Autore</option>
+        </select>        
+        </br>
+        <input type="text" name="parRicercaLibro" id="parRicercaLibro" value="">
+        </br>
+        <button type="submit" id="buttonCercaLibro">Cerca</button>
+    </form>   
+</div>
+
+<div id="cercaBiblioteca">
+    <h3>Cerca una biblioteca</h3>
+    <form method="post" id="formCercaBiblioL" action="/Biblio/php/controller/loggedIn/lettore/toHome.php">
+        <label for="tipoFiltroB">Seleziona il filtro per la ricerca:</label>
+        <select name="tipoFiltroB" id="tipoFiltroB">
+             <option value="citta">Citt&agrave;</option>
+             <option value="nome">Nome della biblioteca</option>                      
+        </select>
+        </br>
+        <input type="text" name="parRicercaBiblio" id="parRicercaBiblio">
+        </br>
+        <button type="submit" id="buttonCercaBiblioL">Cerca</button>
+    </form>   
+</div>
