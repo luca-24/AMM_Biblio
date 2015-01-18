@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Biblio - Pagina di presentazione</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Biblio: pagina di presentazione</h1>
+        <h4>Progetto di Amministrazione di Sistema, anno 2013/2014</h4>
+        <h4>Luca Piras (matricola: 47920)</h4>
+                        
+        <h2>Descrizione dell'applicazione</h2>
+        <p>
+            "Biblio" è un'applicazione web che si occupa della gestione di biblioteche, con funzionalità specifiche e differenziate a seconda che l'utente si registri in qualità di lettore o di bibliotecario.(E' dunque stata realizzata la funzionalità di registrazione al sito).
+        </p>
+        <p>In particolare, il lettore potrà:</p>    
+        <ul>
+            <li>usufruire di funzioni di ricerca (parametrizzate secondo diversi filtri a scelta), sia per libri, sia per biblioteche;</li>
+            <li>visualizzare i dettagli e il catalogo di qualsiasi biblioteca registrata su "Biblio";</li>
+            <li>visualizzare i dettagli di qualsiasi libro presente sull'applicazione, compresi numero di copie e disponibilità;</li>
+            <li>iscriversi alle biblioteche alle quali sia interessato;</li>
+            <li>prendere in prestito libri presso le biblioteche alle quali è iscritto.</li>
+        </ul> 
+        <p>
+            D'altro canto, il bibliotecario potrà:
+        </p>
+        <ul>
+            <li>usufruire di funzioni di ricerca all'interno del proprio catalogo;</li>
+            <li>gestire il proprio catalogo (aggiungere e rimuovere libri, dare libri in prestito e registrare le restituzioni);</li>
+            <li>visualizzare la scheda di ogni libro presente nel suo catalogo, compresi numero di copie e disponibilità;</li>
+            <li>visualizzare la lista degli utenti iscritti alla propria biblioteca e il loro profilo;</li>
+            <li>ammonire un utente, in caso di comportamento inadeguato (il sito prevede che, raggiunte le tre ammonizioni, un lettore non possa più prendere in prestito nessun libro).</li>
+        </ul>
+        
+        <p>
+            Ogni libro, a prescindere dal numero di copie presenti in una biblioteca, rappresenta un'istanza unica all'interno dell'applicazione, identificata univocamente da un "id" nella tabella "libri" del database.
+Ogni istanza prevede un campo "bibliotecarioId" e un altro "lettoreId", chiavi esterne verso la tabella "users", che indicano, rispettivamente, la biblioteca di appartenenza e il lettore (se esiste) che è attualmente in possesso del libro.
+        <br/>Ogni utente &egrave; caratterizzato dalle proprie credenziali di accesso (una email e una password) e dai dettagli anagrafici di base.
+        <br/>All'interno del database &egrave; inoltre presente una tabella che, mediante due chiavi esterne che puntano alla tabella "users", tiene traccia delle iscrizioni dei lettori alle biblioteche.
+        </p>
+        <h2>Requisiti del progetto</h2>
+        <p>
+            Il progetto implementa tutti i requisiti proposti:
+        </p>
+        <ul>
+            <li>Utilizzo di HTML e CSS</li>
+            <li>Utilizzo di PHP e MySQL</li>
+            <li>Utilizzo di javascript (per mezzo di jQuery)</li>
+            <li>Utilizzo del pattern MVC</li>
+            <li>Due ruoli: lettore e bibliotecario</li>
+            <li>Una transazione, implementata nella classe "UtenteFactory", all'interno della funzione "creaUtente"; la transazione gestisce l'eventualità in cui, in fase di registrazione, un utente utilizzi le credenziali di un altro utente già registrato sull'applicazione: in tal caso, la creazione del nuovo utente viene annullata;</li>
+            <li>Una funzionalità ajax, implementata nello script "validazioneForm.js", che si occupa di controllare se l'indirizzo e-mail inserito da un utente in fase di registrazione appartenga già a un utente precedentemente registrato su "Biblio".</li>
+        </ul>
+        <h2>Accesso all'applicazione</h2>
+        <p>Per provare le funzionalità di "Biblio", è possibile registrarsi, in maniera molto semplice e rapida. Se si volesse saltare questa breve fase, è possibile autenticarsi con le seguenti credenziali:</p>
+        <ul>
+            <li>account lettore - email: lettore@biblio.it; password: lettore;</li>
+            <li>account bibliotecario - email: bibliotecario@biblio.it; password: bibliotecario;</li>
+        </ul>
+        <p>Cliccare <a href="/Biblio/php/homePage.php">qui</a> per accedere all'applicazione.</p>
+        <p>Sar&agrave; sempre possibile visualizzare questa pagina cliccando 
+        sulla scritta "Info" presente nel footer di ogni pagina dell'applicazione.</p>
+        <p>Inoltre, al seguente link è possibile visualizzare il codice sorgente
+            del progetto: <a href="https://github.com/luca-24/AMM_Biblio.git">https://github.com/luca-24/AMM_Biblio.git</a></p>
+    </body>
+</html>
