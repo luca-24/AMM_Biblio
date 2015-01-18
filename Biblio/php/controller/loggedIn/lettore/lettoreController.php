@@ -1,7 +1,9 @@
 <?php
 
 
-include_once '/home/amm/development/Biblio/php/Settings.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
+
+//uuu//include_once '/home/amm/development/Biblio/php/Settings.php';
 
 /*
 Settings::setPaths(basename(__DIR__));
