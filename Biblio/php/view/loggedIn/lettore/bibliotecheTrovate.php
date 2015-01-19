@@ -38,7 +38,7 @@ foreach ($biblioteche as $b)
         <td>
             <form method="post" action="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/toSchedaUtente.php">
                 <input type="hidden" name="ruolo" value="lettore">
-                <button type="submit" name="utenteId" value="<?=$b->getId()?>"><img src="/Biblio/imgs/library.png" alt="Biblioteche" height="14" width="14"></button>
+                <button type="submit" name="utenteId" value="<?=$b->getId()?>"><img src="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/imgs/library.png" alt="Biblioteche" height="14" width="14"></button>
             </form>
         </td>
     </tr>  

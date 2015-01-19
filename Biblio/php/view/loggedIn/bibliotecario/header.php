@@ -7,7 +7,7 @@ $bib = $_SESSION['utente'];
 
  
     <div id="leftSide">
-         <a href="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/bibliotecario/toHome.php"><img src="/Biblio/imgs/b.jpg" alt="Logo" height="55" width="55" id="logo"></a>
+         <a href="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/bibliotecario/toHome.php"><img src="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/imgs/b.jpg" alt="Logo" height="55" width="55" id="logo"></a>
          <div id="credenziali">
             <h3><?=$bib->getNomeBiblioteca()?></h3>    
             <h4><?=$bib->getNome()." ".$bib->getCognome()?></h4>
