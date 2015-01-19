@@ -31,7 +31,7 @@ class UtenteFactory
             error_log("Errore nella connessione col server. 
                     $mysqli->connect_errno: $mysqli->connect_error");
             echo "Errore nella connessione";
-            $mysqli->close();
+         //   $mysqli->close();
             return null;
         }
         
@@ -151,7 +151,7 @@ class UtenteFactory
             error_log("Errore nella connessione col server. 
                     $mysqli->connect_errno: $mysqli->connect_error");
             echo "Errore nella connessione";
-            $mysqli->close();
+        //    $mysqli->close();
             return null;
         }
         
@@ -268,7 +268,7 @@ class UtenteFactory
         {
             error_log("Errore nella connessione al server. $mysqli->connect_errno: $mysqli->connect_error");
             echo "Errore nella connessione: $mysqli->connect_error";
-            $mysqli->close();
+         //   $mysqli->close();
             return null;
         }
         
@@ -389,7 +389,7 @@ class UtenteFactory
         {
             error_log("Errore nella connessione al server. $mysqli->connect_errno: $mysqli->connect_error");
             echo "Errore nella connessione: $mysqli->connect_error";
-            $mysqli->close();
+        //    $mysqli->close();
             return null;
         }
                 
@@ -542,7 +542,7 @@ class UtenteFactory
             error_log("Errore nella connessione col server. 
                     $mysqli->connect_errno: $mysqli->connect_error");
             echo "Errore nella connessione";
-            $mysqli->close();
+      //      $mysqli->close();
             return null;
         }
         
@@ -607,7 +607,7 @@ class UtenteFactory
             error_log("Errore nella connessione col server. 
                     $mysqli->connect_errno: $mysqli->connect_error");
             echo "Errore nella connessione";
-            $mysqli->close();
+        //    $mysqli->close();
             return;
         }
         
@@ -647,7 +647,7 @@ class UtenteFactory
             error_log("Errore nella connessione col server. 
                     $mysqli->connect_errno: $mysqli->connect_error");
             echo "Errore nella connessione";
-            $mysqli->close();
+      //      $mysqli->close();
             return;
         }
         
@@ -688,7 +688,7 @@ class UtenteFactory
             error_log("Errore nella connessione col server. 
                     $mysqli->connect_errno: $mysqli->connect_error");
             echo "Errore nella connessione";
-            $mysqli->close();
+      //      $mysqli->close();
             return;
         }
         
@@ -731,7 +731,7 @@ class UtenteFactory
             error_log("Errore nella connessione col server. 
                     $mysqli->connect_errno: $mysqli->connect_error");
             echo "Errore nella connessione";
-            $mysqli->close();
+       //     $mysqli->close();
             return;
         }
         
@@ -801,7 +801,7 @@ class UtenteFactory
             error_log("Errore nella connessione col server. 
                     $mysqli->connect_errno: $mysqli->connect_error");
             echo "Errore nella connessione";
-            $mysqli->close();
+       //     $mysqli->close();
             return;
         }
         
@@ -869,7 +869,7 @@ class UtenteFactory
             error_log("Errore nella connessione col server. 
                     $mysqli->connect_errno: $mysqli->connect_error");
             echo "Errore nella connessione";
-            $mysqli->close();
+       //     $mysqli->close();
             return;
         }
         
