@@ -1,5 +1,6 @@
 <?php
 
+//Classe che modella un libro
 
 class Libro
 {

@@ -1,5 +1,9 @@
 <?php
 
+//Pagina che gestisce l'input dell'utente con ruolo 'bibliotecario' e che
+//costruisce la master-page caricando i contenuti richiesti
+
+
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/ViewDescriptor.php';
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/model/Lettore.php';

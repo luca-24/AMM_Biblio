@@ -1,5 +1,9 @@
 <?php
 
+//Classe che serve a interfacciare le classi Lettore e Bibliotecario del
+//modello con il database;
+//Fornisce funzioni per creare un utente, per aggiornarlo, per cercare
+//un utente a seconda di differenti criteri e altre funzioni utili
 
 include_once 'Lettore.php';
 include_once 'Libro.php';

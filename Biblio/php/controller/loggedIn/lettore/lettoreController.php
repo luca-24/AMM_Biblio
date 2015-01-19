@@ -1,5 +1,8 @@
 <?php
 
+//Pagina che gestisce l'input dell'utente con ruolo 'lettore' e che
+//costruisce la master-page caricando i contenuti richiesti
+
 
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/ViewDescriptor.php';
@@ -15,25 +18,8 @@ include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/controller/loggedIn
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/controller/loggedOut/loggedOutController.php';
 
 
-/****
 if(session_status()!=2)
-            session_start();
-
-include_once $_SESSION['ViewDescriptorPath'];
-include_once $_SESSION['LettorePath'];
-include_once $_SESSION['LibroPath'];
-include_once $_SESSION['LibroFactoryPath'];
-include_once $_SESSION['UtenteFactoryPath'];
-include_once $_SESSION['UtentePath'];
-include_once $_SESSION['BibliotecarioPath'];
-include_once $_SESSION['SettingsPath'];
-include_once $_SESSION['bibliotecarioControllerPath'];
-include_once $_SESSION['loggedOutControllerPath'];
-*****///
-
-
-    if(session_status()!=2)
-            session_start();          
+      session_start();          
 
 if(isset($_REQUEST["cmd"]) && $_REQUEST["cmd"]!='login' && $_REQUEST['cmd']!='registrati')
     lettoreController::handleInput();

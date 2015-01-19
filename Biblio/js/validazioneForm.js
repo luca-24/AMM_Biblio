@@ -1,9 +1,3 @@
-//////////////
-//BISOGNA INSERIRE NEL RAMO if DEI CONTROLLI, DOPO L'alert, L'ATTRIBUTO
-//ACTION DEL FORM, IN MODO TALE CHE LA PAGINA RICARICATA SIA
-//QUELLA CORRENTE!!!!!
-
-
 
 $(document).ready(function()
 { 
@@ -25,15 +19,7 @@ $(document).ready(function()
         }    
    
     });
-    
-    //////////////
-  //  action=\"/Biblio/php/controller/loggedIn/lettore/cercaLibro.php\"
-   // action=\"/Biblio/php/controller/loggedIn/bibliotecario/cercaNelCatalogo.php\"
-    
-    
-    
-    
-    ////////////
+ 
     
     $("#buttonCercaBiblioL").on("click", function()
     {
@@ -51,8 +37,7 @@ $(document).ready(function()
    
     });
     
-    
-    ///////////
+        
     
     $("#buttonAggiungiLibro").on("click", function()
     {
@@ -107,8 +92,7 @@ $(document).ready(function()
     });
    
    
-    /////////
-    
+        
     
     
     $("#submitL").on("click", function()

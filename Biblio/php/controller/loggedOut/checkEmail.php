@@ -1,5 +1,8 @@
 <?php
 
+//Semplice script che controlla se l'indirizzo email inserito dall'utente
+//esiste
+
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/model/UtenteFactory.php';
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
 

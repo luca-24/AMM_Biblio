@@ -1,5 +1,7 @@
 <?php
 
+//Classe che serve a creare la vista caricando i contenuti in maniera dinamica
+
 class ViewDescriptor
 {
     private $titolo;

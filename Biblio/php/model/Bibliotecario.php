@@ -1,6 +1,9 @@
 <?php
 include_once 'Utente.php';
 
+//Classe che modella il ruolo del bibliotecario, attribuendogli
+//variabili di stato e metodi specifici; estende la classe Utente
+
 class Bibliotecario extends Utente
 {
     private $nomeBiblioteca;

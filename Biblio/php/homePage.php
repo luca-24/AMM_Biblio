@@ -1,5 +1,8 @@
 <?php
 
+//Home page dell'applicazione, che individua se è presente una sessione
+//in corso e che in base a questo carica la master-page in maniera
+//appropriata al ruolo dell'account
 
 include_once 'view/ViewDescriptor.php';
 include_once 'controller/loggedIn/lettore/lettoreController.php';

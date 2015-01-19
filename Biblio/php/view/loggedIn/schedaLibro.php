@@ -1,5 +1,8 @@
 <?php 
 
+//Questa pagina può essere usata sia per il lettore, sia per il bibliotecario.
+//Un codice è utilizzato per discernere i criteri di ricerca e la
+//visualizzazione dei contenuti appropriata al ruolo
 
 $utente = $_SESSION['utente'];
 

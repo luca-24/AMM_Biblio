@@ -1,4 +1,8 @@
 <?php
+
+//Classe che modella il ruolo del lettore, attribuendogli
+//variabili di stato e metodi specifici; estende la classe Utente
+
 include_once 'Utente.php';
 
 class Lettore extends Utente

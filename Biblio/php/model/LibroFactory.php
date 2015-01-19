@@ -6,7 +6,9 @@ include_once 'UtenteFactory.php';
 include_once 'Utente.php';
 include_once 'Bibliotecario.php';
 
-
+//Classe che serve a interfacciare la classe Libro del modello con il database
+//Fornisce funzioni per creare un libro, per aggiornarlo, per cercare
+//un libro a seconda di differenti criteri e altre funzioni utili
 
 class LibroFactory
 {

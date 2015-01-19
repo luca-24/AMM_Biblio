@@ -1,11 +1,11 @@
 <?php
 
-////questa pagina può essere usata sia per il lettore, per visualizzare il risultato
-////delle sue ricerche, sia per il bibliotecario, per la visualizzazione del catalogo
+//Questa pagina può essere usata sia per il lettore, per visualizzare il risultato
+//delle sue ricerche, sia per il bibliotecario, per la visualizzazione del catalogo
+//Un codice è utilizzato per discernere i criteri di ricerca e la
+//visualizzazione dei contenuti appropriata al ruolo
 
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
-
-
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/util.php';
 
 

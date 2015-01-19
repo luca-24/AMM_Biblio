@@ -1,5 +1,8 @@
 <?php 
 
+//Pagina principale dell'applicazione. Il suo contenuto è caricato dinamicamente
+//grazie alla classe ViewDescriptor e alle classi del Controller.
+
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/ViewDescriptor.php';
 

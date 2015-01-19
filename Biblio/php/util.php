@@ -1,5 +1,7 @@
 <?php
 
+//Classe che contiene funzioni utili per la formattazione delle date
+
 class Util
 {
     public static function stringData($data)

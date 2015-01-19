@@ -1,5 +1,8 @@
 <?php 
 
+//Questa pagina può essere usata sia per il lettore, sia per il bibliotecario
+//Un codice è utilizzato per discernere la visualizzazione dei contenuti appropriata al ruolo
+
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/util.php';
 
