@@ -86,7 +86,7 @@ class bibliotecarioController
                 $_REQUEST['libri'] = $_SESSION['utente']->cercaLibroPerAutoreNelCatalogo($_REQUEST['autore']);
                 $_REQUEST['codiceRicerca'] = ' ';
                 $vd->setSottopagina('libriTrovati');
-                $vd->setContentFile('Biblio/php/view/loggedIn/libriTrovati.php');
+                $vd->setContentFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/libriTrovati.php');
                 break;
             case 'schedaLibro':
                 $_REQUEST['libro'] = $_REQUEST['auxLibro'];

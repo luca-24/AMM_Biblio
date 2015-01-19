@@ -50,7 +50,7 @@ foreach ($iscritti as $i)
         <td>
             <form method="post" action="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/toSchedaUtente.php">
                 <input type="hidden" name="ruolo" value="bibliotecario">
-                <button type="submit" name="utenteId" value="<?=$i->getId()?>"><img src="/Biblio/imgs/profile.png" alt="profilo" height="14" width="14" class="clickBut"></button></td>                
+                <button type="submit" name="utenteId" value="<?=$i->getId()?>"><img src="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/imgs/profile.png" alt="profilo" height="14" width="14" class="clickBut"></button></td>                
             </form>
     </tr>  
 <?php    
