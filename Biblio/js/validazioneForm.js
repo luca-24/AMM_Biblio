@@ -19,9 +19,9 @@ $(document).ready(function()
         else
         {   
           if($("#ruolo").val() == 'lettore')
-                $("#formCercaLibro").attr("action", "http://spano.sc.unica.it/amm2014/username/Biblio/php/controller/loggedIn/lettore/cercaLibro.php");
+                $("#formCercaLibro").attr("action", "http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/lettore/cercaLibro.php");
             else if($("#ruolo").val() == 'bibliotecario')
-                $("#formCercaLibro").attr("action", "http://spano.sc.unica.it/amm2014/username/Biblio/php/controller/loggedIn/bibliotecario/cercaNelCatalogo.php");
+                $("#formCercaLibro").attr("action", "http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/bibliotecario/cercaNelCatalogo.php");
         }    
    
     });
@@ -46,7 +46,7 @@ $(document).ready(function()
             }
         else
         {           
-            $("#formCercaBiblioL").attr("action", "http://spano.sc.unica.it/amm2014/username/Biblio/php/controller/loggedIn/lettore/cercaBiblioteca.php") ;
+            $("#formCercaBiblioL").attr("action", "http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/lettore/cercaBiblioteca.php") ;
         }    
    
     });
@@ -100,7 +100,7 @@ $(document).ready(function()
         }
         else
         {           
-            $("#formAggiungiLibro").attr("action", "http://spano.sc.unica.it/amm2014/username/Biblio/php/controller/loggedIn/bibliotecario/bibliotecarioController.php") ;
+            $("#formAggiungiLibro").attr("action", "http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/bibliotecario/bibliotecarioController.php") ;
             $("#formAggiungiLibro").submit();
         }    
    
@@ -175,7 +175,7 @@ $(document).ready(function()
         esisteGia= false;
         $.ajax(
         {
-            url: "http://spano.sc.unica.it/amm2014/username/Biblio/php/controller/loggedOut/checkEmail.php",
+            url: "http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedOut/checkEmail.php",
             data: 
             {
                 email : emailL        
@@ -220,7 +220,7 @@ $(document).ready(function()
          }         
          else
             {
-                $("#registrazioneL").attr("action", "http://spano.sc.unica.it/amm2014/username/Biblio/php/controller/loggedOut/loggedOutController.php");   
+                $("#registrazioneL").attr("action", "http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedOut/loggedOutController.php");   
                 $("#registrazioneL").submit();
             }    
      });
@@ -256,7 +256,7 @@ $(document).ready(function()
         esisteGia= false;
         $.ajax(
         {
-            url: "http://spano.sc.unica.it/amm2014/username/Biblio/php/controller/loggedOut/checkEmail.php",
+            url: "http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedOut/checkEmail.php",
             data: 
             {
                 email : emailB        
@@ -294,7 +294,7 @@ $(document).ready(function()
         }
         else
             {
-                $("#registrazioneB").attr("action", "http://spano.sc.unica.it/amm2014/username/Biblio/php/controller/loggedOut/loggedOutController.php");   
+                $("#registrazioneB").attr("action", "http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedOut/loggedOutController.php");   
                 $("#registrazioneB").submit();
              }    
      });
