@@ -3,7 +3,7 @@
 ////questa pagina può essere usata sia per il lettore, per visualizzare il risultato
 ////delle sue ricerche, sia per il bibliotecario, per la visualizzazione del catalogo
 
-include_once '/home/amm/development/Biblio/php/Settings.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
 
 /*Settings::setPaths(basename(__DIR__));
 include_once Settings::$utilPath;*/

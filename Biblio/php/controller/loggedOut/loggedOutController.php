@@ -1,10 +1,10 @@
 <?php
 
-include_once '/home/amm/development/Biblio/php/view/ViewDescriptor.php';
-include_once '/home/amm/development/Biblio/php/model/UtenteFactory.php';
-include_once '/home/amm/development/Biblio/php/Settings.php';
-include_once '/home/amm/development/Biblio/php/controller/loggedIn/bibliotecario/bibliotecarioController.php';
-include_once '/home/amm/development/Biblio/php/controller/loggedIn/lettore/lettoreController.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/ViewDescriptor.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/model/UtenteFactory.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/controller/loggedIn/bibliotecario/bibliotecarioController.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/controller/loggedIn/lettore/lettoreController.php';
 
 
 /****

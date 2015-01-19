@@ -11,8 +11,8 @@ include_once $_SESSION['loggedOutControllerPath'];
 /*********************/
 
 
-include_once '/home/amm/development/Biblio/php/Settings.php';
-include_once '/home/amm/development/Biblio/php/model/UtenteFactory.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/model/UtenteFactory.php';
 //include_once '../../model/UtenteFactory.php';
 //echo Settings::$db_password;
 //return;

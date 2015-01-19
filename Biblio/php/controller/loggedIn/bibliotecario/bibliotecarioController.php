@@ -1,6 +1,6 @@
 <?php
 
-include_once '/home/amm/development/Biblio/php/Settings.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
 
 /*Settings::setPaths(basename(__DIR__));
 
@@ -15,15 +15,15 @@ include_once Settings::$loggedOutControllerPath;
 */
 
 
-include_once '/home/amm/development/Biblio/php/view/ViewDescriptor.php';
-include_once '/home/amm/development/Biblio/php/model/Lettore.php';
-include_once '/home/amm/development/Biblio/php/model/Libro.php';
-include_once '/home/amm/development/Biblio/php/model/LibroFactory.php';
-include_once '/home/amm/development/Biblio/php/model/UtenteFactory.php';
-include_once '/home/amm/development/Biblio/php/model/Utente.php';
-include_once '/home/amm/development/Biblio/php/model/Bibliotecario.php';
-include_once '/home/amm/development/Biblio/php/Settings.php';
-include_once '/home/amm/development/Biblio/php/controller/loggedOut/loggedOutController.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/ViewDescriptor.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/model/Lettore.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/model/Libro.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/model/LibroFactory.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/model/UtenteFactory.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/model/Utente.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/model/Bibliotecario.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/controller/loggedOut/loggedOutController.php';
 
 
 /**********

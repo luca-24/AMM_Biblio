@@ -3,7 +3,7 @@
 include_once '/home/amm/development/Biblio/php/model/UtenteFactory.php';
 include_once '/home/amm/development/Biblio/php/model/LibroFactory.php';*/
 
-include_once '/home/amm/development/Biblio/php/Settings.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
 
 /*Settings::setPaths(basename(__DIR__));
 include_once Settings::$utilPath;*/
