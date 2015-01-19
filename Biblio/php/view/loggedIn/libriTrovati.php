@@ -28,7 +28,7 @@ if($codiceRicerca=='catalogo' && $utente->getRuolo()=='lettore')
 if($utente->getRuolo()=='bibliotecario')
 {
     echo "<h3>Catalogo</h3>
-        <h4><a href=\"/Biblio/php/controller/loggedIn/bibliotecario/toAggiungiLibro.php\" id=\"aggiungiA\">Aggiungi un libro al catalogo</a></h4>";
+        <h4><a href=\"http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/bibliotecario/toAggiungiLibro.php\" id=\"aggiungiA\">Aggiungi un libro al catalogo</a></h4>";
     switch($codiceRicerca)
     {
         case 'catalogo':
@@ -132,7 +132,7 @@ foreach ($libri as $l)
         
         ?>
         <td>
-            <form method="post" action="/Biblio/php/controller/loggedIn/toSchedaLibro.php">
+            <form method="post" action="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/toSchedaLibro.php">
                 <?php 
                 if($codiceRicerca!='inPrestito' && $codiceRicerca!='prestati')
                 {
@@ -155,7 +155,7 @@ foreach ($libri as $l)
                 ?>
                 
                 
-                <button type="submit"><img src="/Biblio/imgs/book.png" alt="Libri" height="14" width="14"></button>
+                <button type="submit"><img src="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/imgs/book.png" alt="Libri" height="14" width="14"></button>
             </form>         
           
         </td>

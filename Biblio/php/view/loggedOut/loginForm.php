@@ -11,7 +11,7 @@
       if($msg!=NULL)
         echo "<p id=\"errore\">$msg</p>";
       ?>
-      <form method="post" action="/Biblio/php/controller/loggedOut/loggedOutController.php">
+      <form method="post" action="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedOut/loggedOutController.php">
            <label for="email">E-mail</label><br/>
            <input type="text" name="email" id="email" value=""/> <br/>
            <label for="password">Password</label><br/>
@@ -20,6 +20,6 @@
            <button type="submit">Accedi</button>                
       </form>
       <div id="par_login">
-            <p>Non sei ancora registrato?<br/><a href="/Biblio/php/controller/loggedOut/toRegistrazione.php">Fallo ora!</a></p>
+            <p>Non sei ancora registrato?<br/><a href="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedOut/toRegistrazione.php">Fallo ora!</a></p>
       </div>
 </div>  

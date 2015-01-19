@@ -55,7 +55,7 @@ else if($ruoloUtente=='bibliotecario')
 if($ruoloUtente=='bibliotecario')
 {
     echo "
-        <form method=\"post\" action=\"/Biblio/php/controller/loggedIn/".$ruoloLoggato."/toCatalogo.php\">
+        <form method=\"post\" action=\"http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/".$ruoloLoggato."/toCatalogo.php\">
             <button type=\"submit\" name=\"bibliotecaId\" value=".$utente->getId().">Visualizza catalogo</button>
         </form>
         
@@ -84,7 +84,7 @@ if($ruoloLoggato == 'bibliotecario' && $ruoloUtente=='lettore')
         if($utente->getNAmmonizioni()<3)
         {
             echo "                
-                <form method=\"post\" action=\"/Biblio/php/controller/loggedIn/bibliotecario/bibliotecarioController.php\">
+                <form method=\"post\" action=\"http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/bibliotecario/bibliotecarioController.php\">
                     <input type=\"hidden\" name=\"bibliotecarioId\" value=".$loggato->getId().">
                     <input type=\"hidden\" name=\"utenteId\" value=".$utente->getId().">
                     <button type=\"submit\" name=\"cmd\" value=\"ammonizione\">Ammonisci</button>     
@@ -128,12 +128,12 @@ if($ruoloLoggato == 'bibliotecario' && $ruoloUtente=='lettore')
                         <td>".$l->getAutore()."</td>
                         <td>".$l->getId()."</td>
                         <td>
-                            <form method=\"post\" action=\"/Biblio/php/controller/loggedIn/toSchedaLibro.php\">
+                            <form method=\"post\" action=\"http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/toSchedaLibro.php\">
                                 <input type=\"hidden\" name=\"libroId\" value=".$l->getId().">
                                 <input type=\"hidden\" name=\"codiceScheda\" value=\"singoloPrestato\">
                                 <input type=\"hidden\" name=\"ruolo\" value=\"bibliotecario\">
                                 <input type=\"hidden\" name=\"noleggianteId\" value=".$l->getLettoreId().">
-                                <button type=\"submit\"><img src=\"/Biblio/imgs/book.png\" alt=\"Libri\" height=\"14\" width=\"14\"></button>
+                                <button type=\"submit\"><img src=\"http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/imgs/book.png\" alt=\"Libri\" height=\"14\" width=\"14\"></button>
                             </form>
                          </td>
                     </tr>";
@@ -157,7 +157,7 @@ if($ruoloLoggato=='lettore' && $ruoloUtente=='bibliotecario')
         if(!($loggato->isIscritto($utente)))
         {
             echo "                
-                <form method=\"post\" action=\"/Biblio/php/controller/loggedIn/lettore/lettoreController.php\">
+                <form method=\"post\" action=\"http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/lettore/lettoreController.php\">
                     <input type=\"hidden\" name=\"utenteId\" value=".$loggato->getId().">
                     <input type=\"hidden\" name=\"bibliotecaId\" value=".$utente->getId().">
                     <button type=\"submit\" name=\"cmd\" value=\"iscrizione\">Iscriviti</button>     
@@ -179,7 +179,7 @@ if($ruoloLoggato=='lettore' && $ruoloUtente=='bibliotecario')
             {
                 
                 echo "                
-                <form method=\"post\" action=\"/Biblio/php/controller/loggedIn/lettore/lettoreController.php\">
+                <form method=\"post\" action=\"http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/lettore/lettoreController.php\">
                     <input type=\"hidden\" name=\"utenteId\" value=".$loggato->getId().">
                     <input type=\"hidden\" name=\"bibliotecaId\" value=".$utente->getId().">
                     <button type=\"submit\" name=\"cmd\" value=\"disiscrizione\">Disiscriviti</button>     

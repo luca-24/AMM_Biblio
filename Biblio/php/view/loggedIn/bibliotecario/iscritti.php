@@ -57,7 +57,7 @@ foreach ($iscritti as $i)
         <td><?=$nLibriInPrestito?></td>
         <td><?= $i->getNAmmonizioni()?></td>
         <td>
-            <form method="post" action="/Biblio/php/controller/loggedIn/toSchedaUtente.php">
+            <form method="post" action="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/toSchedaUtente.php">
                 <input type="hidden" name="ruolo" value="bibliotecario">
                 <button type="submit" name="utenteId" value="<?=$i->getId()?>"><img src="/Biblio/imgs/profile.png" alt="profilo" height="14" width="14" class="clickBut"></button></td>                
             </form>

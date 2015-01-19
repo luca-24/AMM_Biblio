@@ -39,7 +39,7 @@ foreach ($biblioteche as $b)
         <td><?= $b->getNome()." ".$b->getCognome()?></td>
         <td><?= $b->getEmail()?></td>
         <td>
-            <form method="post" action="/Biblio/php/controller/loggedIn/toSchedaUtente.php">
+            <form method="post" action="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/toSchedaUtente.php">
                 <input type="hidden" name="ruolo" value="lettore">
                 <button type="submit" name="utenteId" value="<?=$b->getId()?>"><img src="/Biblio/imgs/library.png" alt="Biblioteche" height="14" width="14"></button>
             </form>

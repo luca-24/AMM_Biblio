@@ -1,5 +1,5 @@
 
-<img src="/Biblio/imgs/info.png" alt="info" height="16px" width="16px" id="info">
+<img src="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/imgs/info.png" alt="info" height="16px" width="16px" id="info">
 <?php
 switch ($vd->getSottopagina())
 {

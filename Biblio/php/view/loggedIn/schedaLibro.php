@@ -81,7 +81,7 @@ if($utente->getRuolo() == 'lettore')
                 {
                     ///$primoDisp = LibroFactory::caricaPrimoDisponibile($libro->getTitolo(), )
                      echo "
-                         <form method=\"post\" action=\"/Biblio/php/controller/loggedIn/lettore/lettoreController.php\">
+                         <form method=\"post\" action=\"http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/lettore/lettoreController.php\">
                              <input type=\"hidden\" name=\"libroId\" value=".$libro->getId().">
                              <input type=\"hidden\" name=\"utenteId\" value=".$utente->getId().">
                              <input type=\"hidden\" name=\"nCopie\" value=".$_REQUEST['nCopie'].">
@@ -104,7 +104,7 @@ if($utente->getRuolo() == 'lettore')
         {
             echo "<p>Devi prima registrarti a $nomeBiblioteca per poter prendere
             in prestito questo libro.</p>";
-            echo "<form method=\"post\" action=\"/Biblio/php/controller/loggedIn/lettore/lettoreController.php\">
+            echo "<form method=\"post\" action=\"http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/lettore/lettoreController.php\">
                     <input type=\"hidden\" name=\"utenteId\" value=".$utente->getId().">
                     <input type=\"hidden\" name=\"bibliotecaId\" value=".$libro->getBibliotecarioId().">                    
                     <input type=\"hidden\" name=\"tornaA\" value=\"schedaLibro\">
@@ -137,7 +137,7 @@ else if($utente->getRuolo() == 'bibliotecario')
     if(isset($_REQUEST['disp']) && $_REQUEST['disp']>0)
     {
         echo "
-            <form method=\"post\" action=\"/Biblio/php/controller/loggedIn/bibliotecario/bibliotecarioController.php\">
+            <form method=\"post\" action=\"http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/bibliotecario/bibliotecarioController.php\">
                 <input type=\"hidden\" name=\"libroId\" value=".$libro->getId().">
                 <input type=\"hidden\" name=\"cmd\" value=\"rimozioneLibro\">";
                 if(isset($_REQUEST['nCopie']) && isset($_REQUEST['disp']))
@@ -155,7 +155,7 @@ else if($utente->getRuolo() == 'bibliotecario')
         echo "
             <div id=\"formPrestito\" class=\"hidden\">
             <p>Seleziona l'utente a cui vuoi prestare il libro.</p>
-            <form  method=\"post\" action=\"/Biblio/php/controller/loggedIn/lettore/lettoreController.php\">
+            <form  method=\"post\" action=\"http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/lettore/lettoreController.php\">
                    <input type=\"hidden\" name=\"libroId\" value=".$libro->getId().">";
                    
                    $iscr = $utente->caricaIscritti();
@@ -212,7 +212,7 @@ else if($utente->getRuolo() == 'bibliotecario')
         </div>
         <div id="formRestituzione" class="hidden">           
             <p>Seleziona l'utente di cui vuoi registrare la restituzione:</p>            
-            <form method="post" action="/Biblio/php/controller/loggedIn/bibliotecario/bibliotecarioController.php">    
+            <form method="post" action="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/bibliotecario/bibliotecarioController.php">    
             <input type="hidden" name="cmd" value="restituzioneLibro">            
             <?php
             if(isset($_REQUEST['nCopie']) && isset($_REQUEST['disp']))
@@ -265,7 +265,7 @@ else if($utente->getRuolo() == 'bibliotecario')
     if($codiceScheda=='singoloPrestato')
     {
         echo"
-         <form method=\"post\" action=\"/Biblio/php/controller/loggedIn/bibliotecario/bibliotecarioController.php\">    
+         <form method=\"post\" action=\"http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/bibliotecario/bibliotecarioController.php\">    
             <input type=\"hidden\" name=\"tornaA\" value=\"catalogo\">
             <input type=\"hidden\" name=\"cmd\" value=\"restituzioneLibro\">
             <input type=\"hidden\" name=\"noleggianteId_libroId\" id=\"noleggianteId_libroId\" value=\"".$_REQUEST['noleggianteId']."-".$libro->getId()."\">       

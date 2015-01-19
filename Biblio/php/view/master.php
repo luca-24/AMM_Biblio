@@ -34,10 +34,10 @@ echo session_status()." sessionStatus</br>";
         <meta name="author" content="Luca Piras">
         <meta name="keywords" content="AMM biblioteche">
         <meta name="description" content="Una pagina per gestire biblioteche" />
-        <link rel="stylesheet" type="text/css" href="/Biblio/css/loggedOut.css">
-        <script type="text/javascript" src="/Biblio/js/jquery-1.11.1.js"></script>
-        <script type="text/javascript" src="/Biblio/js/validazioneForm.js"></script>
-        <script type="text/javascript" src="/Biblio/js/nascondiMenu.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/css/loggedOut.css">
+        <script type="text/javascript" src="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/js/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/js/validazioneForm.js"></script>
+        <script type="text/javascript" src="http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/js/nascondiMenu.js"></script>
     </head>
     <body>
          
