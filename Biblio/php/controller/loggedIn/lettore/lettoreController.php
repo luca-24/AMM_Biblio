@@ -64,23 +64,23 @@ class lettoreController
             
         if(!isset($_SESSION['logged']) || $_SESSION['logged']==FALSE)
         {
-            $vd->setHeaderFile('/home/amm/development/Biblio/php/view/loggedOut/header.html');
-            $vd->setFooterFile('/home/amm/development/Biblio/php/view/loggedOut/footer.html');
+            $vd->setHeaderFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedOut/header.html');
+            $vd->setFooterFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedOut/footer.html');
             $vd->setMessaggioErrore('Sessione scaduta');
             $vd->setPagina('login');
             $vd->setTitolo('Biblio');
-            $vd->setContentFile ('/home/amm/development/Biblio/php/view/loggedOut/loginForm.php');
-            require_once '/home/amm/development/Biblio/php/view/master.php';
+            $vd->setContentFile ('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedOut/loginForm.php');
+            require_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/master.php';
             return;
         }  
         
         $vd->setTitolo('Biblio-'.$newContent);
         $vd->setPagina('lettore');        
-        $vd->setHeaderFile('/home/amm/development/Biblio/php/view/loggedIn/lettore/header.php');
-        $vd->setFooterFile('/home/amm/development/Biblio/php/view/loggedIn/lettore/footer.html');
-        $vd->setLeftBarFile('/home/amm/development/Biblio/php/view/loggedIn/lettore/sidebarLeft.html');
+        $vd->setHeaderFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/lettore/header.php');
+        $vd->setFooterFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/lettore/footer.html');
+        $vd->setLeftBarFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/lettore/sidebarLeft.html');
         $vd->setSottopagina($newContent);
-        $vd->setRightBarFile('/home/amm/development/Biblio/php/view/loggedIn/lettore/sidebarRight.php');
+        $vd->setRightBarFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/lettore/sidebarRight.php');
                        
         
         switch($newContent)
@@ -88,32 +88,32 @@ class lettoreController
             case 'profilo':
                 $_REQUEST['utente'] = $_SESSION['utente'];
                 $vd->setSottopagina('profilo');
-                $vd->setContentFile('/home/amm/development/Biblio/php/view/loggedIn/schedaUtente.php');
+                $vd->setContentFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/schedaUtente.php');
                 break;
             case 'libriInPrestito':
                 $_REQUEST['libri'] = $_SESSION['utente']->caricaLibriInPrestito();
                 $_REQUEST['codiceRicerca'] = 'inPrestito';
                 $vd->setSottopagina('libriTrovati');
-                $vd->setContentFile('/home/amm/development/Biblio/php/view/loggedIn/libriTrovati.php');
+                $vd->setContentFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/libriTrovati.php');
                 break;
             case 'catalogoBiblioteca':
                 $_REQUEST['libri'] = $_REQUEST['biblioteca']->caricaCatalogo();
                 $_REQUEST['codiceRicerca'] = 'catalogo';
                 $_REQUEST['bibCatalogo'] = $_REQUEST['biblioteca'];
                 $vd->setSottopagina('libriTrovati');
-                $vd->setContentFile('/home/amm/development/Biblio/php/view/loggedIn/libriTrovati.php');
+                $vd->setContentFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/libriTrovati.php');
                 break;
             case 'ricercaLibriPerTitolo':
                 $_REQUEST['libri'] = $_SESSION['utente']->cercaLibroPerTitolo($_REQUEST['titolo']);
                 $_REQUEST['codiceRicerca'] = ' ';
                 $vd->setSottopagina('libriTrovati');
-                $vd->setContentFile('/home/amm/development/Biblio/php/view/loggedIn/libriTrovati.php');
+                $vd->setContentFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/libriTrovati.php');
                 break;
             case 'ricercaLibriPerAutore':
                 $_REQUEST['libri'] = $_SESSION['utente']->cercaLibroPerAutore($_REQUEST['autore']);
                 $_REQUEST['codiceRicerca'] = ' ';
                 $vd->setSottopagina('libriTrovati');
-                $vd->setContentFile('/home/amm/development/Biblio/php/view/loggedIn/libriTrovati.php');
+                $vd->setContentFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/libriTrovati.php');
                 break;
             case 'cercaPerTitoloNelleMieBiblioteche':
                 $biblioteche = $_SESSION['utente']->caricaMieBiblioteche();
@@ -132,7 +132,7 @@ class lettoreController
                 }
                 $_REQUEST['codiceRicerca'] = ' ';
                 $vd->setSottopagina('libriTrovati');
-                $vd->setContentFile('/home/amm/development/Biblio/php/view/loggedIn/libriTrovati.php');
+                $vd->setContentFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/libriTrovati.php');
                 break;
              case 'cercaPerAutoreNelleMieBiblioteche':
                 $biblioteche = $_SESSION['utente']->caricaMieBiblioteche();
@@ -151,39 +151,39 @@ class lettoreController
                 }
                 $_REQUEST['codiceRicerca'] = ' ';
                 $vd->setSottopagina('libriTrovati');
-                $vd->setContentFile('/home/amm/development/Biblio/php/view/loggedIn/libriTrovati.php');
+                $vd->setContentFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/libriTrovati.php');
                 break;            
             case 'cercaPerTitoloInUnaBiblioteca':
                 $biblioteca = UtenteFactory::caricaUtentePerId($_REQUEST['auxBibliotecaId']);
                 $_REQUEST['libri'] = LibroFactory::caricaLibriPerFiltro($_REQUEST['titolo'], 'titolo', $biblioteca);
                 $_REQUEST['codiceRicerca'] = ' ';
                 $vd->setSottopagina('libriTrovati');
-                $vd->setContentFile('/home/amm/development/Biblio/php/view/loggedIn/libriTrovati.php');
+                $vd->setContentFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/libriTrovati.php');
                 break;
             case 'cercaPerAutoreInUnaBiblioteca':
                 $biblioteca = UtenteFactory::caricaUtentePerId($_REQUEST['auxBibliotecaId']);
                 $_REQUEST['libri'] = LibroFactory::caricaLibriPerFiltro($_REQUEST['autore'], 'autore', $biblioteca);
                 $_REQUEST['codiceRicerca'] = ' ';
                 $vd->setSottopagina('libriTrovati');
-                $vd->setContentFile('/home/amm/development/Biblio/php/view/loggedIn/libriTrovati.php');
+                $vd->setContentFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/libriTrovati.php');
                 break;                
             case 'mieBiblioteche':
                 $_REQUEST['biblioteche'] = $_SESSION['utente']->caricaMieBiblioteche();
                 $_REQUEST['codiceRicerca'] = 'mieBiblioteche';
                 $vd->setSottopagina('bibliotecheTrovate');
-                $vd->setContentFile('/home/amm/development/Biblio/php/view/loggedIn/lettore/bibliotecheTrovate.php');
+                $vd->setContentFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/lettore/bibliotecheTrovate.php');
                 break;
             case 'ricercaBibliotechePerNome':
                 $_REQUEST['biblioteche'] = UtenteFactory::caricaBibliotechePerFiltro($_REQUEST['nome'], 'nomeBiblioteca');
                 $_REQUEST['codiceRicerca'] = ' ';
                 $vd->setSottopagina('bibliotecheTrovate');
-                $vd->setContentFile('/home/amm/development/Biblio/php/view/loggedIn/lettore/bibliotecheTrovate.php');
+                $vd->setContentFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/lettore/bibliotecheTrovate.php');
                 break;
             case 'ricercaBibliotecheCitta':
                 $_REQUEST['biblioteche'] = UtenteFactory::caricaBibliotechePerFiltro($_REQUEST['citta'], 'citta');
                 $_REQUEST['codiceRicerca'] = ' ';
                 $vd->setSottopagina('bibliotecheTrovate');
-                $vd->setContentFile('/home/amm/development/Biblio/php/view/loggedIn/lettore/bibliotecheTrovate.php');
+                $vd->setContentFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/lettore/bibliotecheTrovate.php');
                 break;           
             case 'schedaLibro':
                 $_REQUEST['libro'] = $_REQUEST['auxLibro'];
@@ -197,24 +197,24 @@ class lettoreController
                     $vd->setSottopagina('libroInPrestito');
                 else
                     $vd->setSottopagina('schedaLibro');
-                $vd->setContentFile ('/home/amm/development/Biblio/php/view/loggedIn/schedaLibro.php');
+                $vd->setContentFile ('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/schedaLibro.php');
                 break;
             case 'schedaBiblioteca':
                 $_REQUEST['utente'] = $_REQUEST['auxUtente'];
                 $vd->setSottopagina('schedaBiblioteca');
-                $vd->setContentFile ('/home/amm/development/Biblio/php/view/loggedIn/schedaUtente.php');
+                $vd->setContentFile ('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/schedaUtente.php');
                 break;
             case 'home':
-                $vd->setContentFile ('/home/amm/development/Biblio/php/view/loggedIn/lettore/homeContent.html');          
+                $vd->setContentFile ('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedIn/lettore/homeContent.html');          
                 break;
             case 'credits':
-                $vd->setContentFile ('/home/amm/development/Biblio/php/view/credits.html');          
+                $vd->setContentFile ('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/credits.html');          
                 break;
             default :
                   echo "errore";
         }              
         
-        require_once '/home/amm/development/Biblio/php/view/master.php';        
+        require_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/master.php';        
     }
     
     
@@ -224,12 +224,12 @@ class lettoreController
         if(!isset($_SESSION['logged']) || $_SESSION['logged']==FALSE)
         {
             $vd = new ViewDescriptor();
-            $vd->setHeaderFile('/home/amm/development/Biblio/php/view/loggedOut/header.html');
-            $vd->setFooterFile('/home/amm/development/Biblio/php/view/loggedOut/footer.html');
+            $vd->setHeaderFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedOut/header.html');
+            $vd->setFooterFile('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedOut/footer.html');
             $vd->setMessaggioErrore('Sessione scaduta');
             $vd->setPagina('login');
-            $vd->setContentFile ('/home/amm/development/Biblio/php/view/loggedOut/loginForm.php');
-            require_once '/home/amm/development/Biblio/php/view/master.php';
+            $vd->setContentFile ('/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/loggedOut/loginForm.php');
+            require_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/master.php';
             return;
         }
         

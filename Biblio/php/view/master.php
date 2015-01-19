@@ -7,7 +7,7 @@ include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
 /*Settings::setPaths(basename(__DIR__));
 include_once Settings::$ViewDescriptorPath;*/
 
-include_once '/home/amm/development/Biblio/php/view/ViewDescriptor.php';
+include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/ViewDescriptor.php';
 /****
 if(session_status()!=2)
             session_start();
