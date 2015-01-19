@@ -9,7 +9,7 @@ class Settings
     public static $db_host = 'localhost';
     public static $db_user = 'pirasLuca';
     public static $db_password = 'taccola32';
-    public static $db_name='amm2014_pirasLuca';
+    public static $db_name='amm14_pirasLuca';
     public static $UtentePath;
     public static $BibliotecarioPath;
     public static $LettorePath;
