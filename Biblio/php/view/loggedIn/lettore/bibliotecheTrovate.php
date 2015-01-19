@@ -1,8 +1,5 @@
 <?php 
 
-//include_once '/home/amm/development/Biblio/php/model/UtenteFactory.php';
-//include_once '/home/amm/development/Biblio/php/model/LibroFactory.php';
-
 
 $biblioteche = $_REQUEST['biblioteche'];
 

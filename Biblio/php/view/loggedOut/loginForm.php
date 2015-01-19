@@ -1,8 +1,3 @@
-<?php
-
-//include_once '/home/amm/development/Biblio/php/view/ViewDescriptor.php';
-
-?>
 
 <div id="login_form">
       <h1 id="titoloPrinc">Biblio</h1>

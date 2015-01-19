@@ -10,8 +10,6 @@ if(isset($_REQUEST['disp']) && $_REQUEST['disp']>0)
     $libro = LibroFactory::caricaPrimoDisponibile($libro->getTitolo(), $libro->getBibliotecarioId());
 }
 
-/////echo "ID: ".$libro->getId()."</br>";
-
 $codiceScheda = $_REQUEST['codiceScheda'];
 
 ?>
@@ -79,7 +77,6 @@ if($utente->getRuolo() == 'lettore')
             {
                 if($_REQUEST['disp']>0)
                 {
-                    ///$primoDisp = LibroFactory::caricaPrimoDisponibile($libro->getTitolo(), )
                      echo "
                          <form method=\"post\" action=\"http://spano.sc.unica.it/amm2014/pirasLuca/Biblio/php/controller/loggedIn/lettore/lettoreController.php\">
                              <input type=\"hidden\" name=\"libroId\" value=".$libro->getId().">

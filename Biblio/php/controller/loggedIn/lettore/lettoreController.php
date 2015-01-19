@@ -2,24 +2,6 @@
 
 
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
-
-//uuu//include_once '/home/amm/development/Biblio/php/Settings.php';
-
-/*
-Settings::setPaths(basename(__DIR__));
-
-include_once Settings::$ViewDescriptorPath;
-include_once Settings::$LettorePath;
-include_once Settings::$LibroPath;
-include_once Settings::$LibroFactoryPath;
-include_once Settings::$UtenteFactoryPath;
-include_once Settings::$UtentePath;
-include_once Settings::$BibliotecarioPath;
-include_once Settings::$loggedOutControllerPath;
-include_once Settings::$bibliotecarioControllerPath;
-*/
-
-
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/ViewDescriptor.php';
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/model/Lettore.php';
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/model/Libro.php';

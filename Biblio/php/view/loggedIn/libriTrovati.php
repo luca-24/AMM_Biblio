@@ -5,18 +5,9 @@
 
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
 
-/*Settings::setPaths(basename(__DIR__));
-include_once Settings::$utilPath;*/
 
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/util.php';
 
-/***
-if(session_status()!=2)
-            session_start();
-include_once $_SESSION['utilPath'];
-***/
-
-////echo __FILE__;
 
 $utente = $_SESSION['utente'];
 $libri = $_REQUEST['libri'];

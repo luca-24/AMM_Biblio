@@ -5,14 +5,6 @@ include_once 'bibliotecario/bibliotecarioController.php';
 
 
 
-/****
-if(session_status()!=2)
-            session_start();
-include_once $_SESSION['lettoreControllerPath'];
-include_once $_SESSION['bibliotecarioControllerPath'];
-****/
-
-
 if(isset($_REQUEST))
 {
     $_REQUEST['auxLibro'] = LibroFactory::caricaLibroPerId($_REQUEST['libroId']);

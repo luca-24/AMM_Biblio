@@ -7,15 +7,6 @@ include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/controller/loggedIn
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/controller/loggedIn/lettore/lettoreController.php';
 
 
-/****
-if(session_status()!=2)
-            session_start();
-include_once $_SESSION['ViewDescriptorPath'];
-include_once $_SESSION['UtenteFactoryPath'];
-include_once $_SESSION['SettingsPath'];
-include_once $_SESSION['lettoreControllerPath'];
-include_once $_SESSION['bibliotecarioControllerPath'];
-****/
 if(session_status()!=2)
             session_start();
 
@@ -163,7 +154,6 @@ class loggedOutController
                     $response = false;
                 else
                     $response = true;
-             //   $response = "ciao";
                  echo json_encode($response);
                  break;
                 

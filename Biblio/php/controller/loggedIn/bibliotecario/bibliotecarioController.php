@@ -1,20 +1,6 @@
 <?php
 
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
-
-/*Settings::setPaths(basename(__DIR__));
-
-include_once Settings::$ViewDescriptorPath;
-include_once Settings::$LettorePath;
-include_once Settings::$LibroPath;
-include_once Settings::$LibroFactoryPath;
-include_once Settings::$UtenteFactoryPath;
-include_once Settings::$UtentePath;
-include_once Settings::$BibliotecarioPath;
-include_once Settings::$loggedOutControllerPath;
-*/
-
-
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/view/ViewDescriptor.php';
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/model/Lettore.php';
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/model/Libro.php';
@@ -25,20 +11,6 @@ include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/model/Bibliotecario
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/Settings.php';
 include_once '/home/amm/repoAmm/amm2014/pirasLuca/Biblio/php/controller/loggedOut/loggedOutController.php';
 
-
-/**********
-if(session_status()!=2)
-            session_start();
-include_once $_SESSION['ViewDescriptorPath'];
-include_once $_SESSION['LettorePath'];
-include_once $_SESSION['LibroPath'];
-include_once $_SESSION['LibroFactoryPath'];
-include_once $_SESSION['UtenteFactoryPath'];
-include_once $_SESSION['UtentePath'];
-include_once $_SESSION['BibliotecarioPath'];
-include_once $_SESSION['SettingsPath'];
-include_once $_SESSION['loggedOutControllerPath'];
-********/
 
 if(session_status()!=2)
      session_start();

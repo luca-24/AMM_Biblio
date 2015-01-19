@@ -1,10 +1,5 @@
 <?php
 include_once 'Utente.php';
-/****
-if(session_status()!=2)
-            session_start();
-include_once $_SESSION['UtentePath'];
-****/
 
 class Lettore extends Utente
 {
@@ -108,6 +103,7 @@ class Lettore extends Utente
     public function prendiInPrestito($libro)
     {
        $libro->setLettoreId($this->getId());
+       date_default_timezone_set('UTC');
        $libro->setDataPrestito(date('Y-m-d'));
        LibroFactory::aggiornaLibro($libro);
     }
